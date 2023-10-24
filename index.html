@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivePulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|EB+Garamond:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src='https://media.discordapp.net/attachments/1159701745044299888/1166052457877610526/Gray_Black_Minimalist_Modern_Brand_Logo1.png?ex=654915fa&is=6536a0fa&hm=3bf72f7e5e06077397480e059efea10571b8691c4346fc691a65f5feb2f54c9b&=&width=492&height=492' alt="ActivePulse Logo" id="logo">
+        <h1>ActivePulse</h1>
+    </header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link" >Home</a></li>
+            <li><a href="features.html" class="nav-link" >Features</a></li>
+            <li><a href="contacts.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h2>Your Personal Health Companion</h2>
+        <p>Track your workouts, monitor your nutrition, and achieve your fitness goals with our app.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+    <section class="features">
+        <h3>Key Features</h3>
+        <div class="feature">
+            <img width 30=vm height=50vm src="https://media.discordapp.net/attachments/1159701745044299888/1166177357258825758/Black_And_Beige_Minimalist_Aesthetic_Modern_Simple_Typography_Salt_Logo.png?ex=65498a4c&is=6537154c&hm=1a56666aa764c51803660fff61e1a87447771eb1eff8d2dd0be2d397df3562aa&=&width=492&height=492" alt="Exercise Icon">
+            <h4>Workout Tracking</h4>
+            <p>Log your workouts with ease and view your progress over time.</p>
+        </div>
+        <div class="feature">
+            <img width 30=vm height=50vm src="https://media.discordapp.net/attachments/1159701745044299888/1166177396345544784/Black_And_Beige_Minimalist_Aesthetic_Modern_Simple_Typography_Salt_Logo1.png?ex=65498a55&is=65371555&hm=61c5e8bb19ba958e5d4a4ebb6aeeec1c0c09037c903ebae4b65bed508c83b67c&=&width=492&height=492" alt="Nutrition Icon">
+            <h4>Nutrition Tracking</h4>
+            <p>Monitor your calorie intake and maintain a balanced diet.</p>
+        </div>
+        <div class="feature">
+            <img width 30=vm height=50vm src="https://media.discordapp.net/attachments/1159701745044299888/1166180381532373143/Black_And_Beige_Minimalist_Aesthetic_Modern_Simple_Typography_Salt_Logo2.png?ex=65498d1d&is=6537181d&hm=bc8046041ea4539cb0237d7bd554d91eae2c337c861ef38424c700947073004f&=&width=492&height=492" alt="Community Icon">
+            <h4>Community Support</h4>
+            <p>Connect with like-minded individuals and stay motivated.</p>
+        </div>
+    </section>
+    <section class="download">
+        <h3>Download the App</h3>
+        <p>Available on both iOS and Android</p>
+        <div class="app-buttons">
+            <a href="#" class="app-button ios">Download on the App Store</a>
+            <a href="#" class="app-button android">Get it on Google Play</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 ActivePulse</p>
+    </footer>
+    <script>
+        function navigateToFeatures() {
+            const featuresFrame = document.getElementById('features-frame');
+            const contactsFrame = document.getElementById('contacts-frame');
+
+            featuresFrame.style.opacity = '0';
+            featuresFrame.style.transform = 'translateX(-100%)';
+
+            setTimeout(() => {
+                featuresFrame.style.display = 'none';
+                contactsFrame.style.display = 'block';
+                setTimeout(() => {
+                    contactsFrame.style.opacity = '1';
+                    contactsFrame.style.transform = 'translateX(0)';
+                }, 100);
+            }, 300);
+        }
+
+        function navigateToContacts() {
+            const featuresFrame = document.getElementById('features-frame');
+            const contactsFrame = document.getElementById('contacts-frame');
+
+            contactsFrame.style.opacity = '0';
+            contactsFrame.style.transform = 'translateX(100%)';
+
+            setTimeout(() => {
+                contactsFrame.style.display = 'none';
+                featuresFrame.style.display = 'block';
+                setTimeout(() => {
+                    featuresFrame.style.opacity = '1';
+                    featuresFrame.style.transform = 'translateX(0)';
+                }, 100);
+            }, 300);
+        }
+    </script>
+</body>
+</html>

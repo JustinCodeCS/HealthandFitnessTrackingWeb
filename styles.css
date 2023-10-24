@@ -1,0 +1,93 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(174, 172, 172, 0.75),rgba(174, 172, 172, 0.75)), url("https://pbs.twimg.com/media/F9LCQbZbYAAewYt?format=jpg&name=4096x4096"); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+#logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px; /* Add some spacing to the right of the logo */
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem;
+}
+
+.feature {
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    background-color: #6d6d6d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #77e2ff;
+}
+
+.contact-list {
+    list-style: none; 
+    margin-left: 0; 
+}
+
+.contact-symbol {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+#email .contact-symbol {
+    background-image: url('https://media.discordapp.net/attachments/1159701745044299888/1166205020069429339/Untitled_design3.png?ex=6549a40f&is=65372f0f&hm=73527db248b27e545c0c2ae54774dc1489fb5cc298eb790455a3dda38eb2f628&=&width=492&height=492');
+}
+#whatsapp .contact-symbol {
+    background-image: url('https://media.discordapp.net/attachments/1159701745044299888/1166205020312707093/Untitled_design2.png?ex=6549a40f&is=65372f0f&hm=f6bae6cb213c6b9a1d302e7cedbc0d88e3c73189e00ac5245614db242396b287&=&width=492&height=492');
+}
+#instagram .contact-symbol {
+    background-image: url('https://media.discordapp.net/attachments/1159701745044299888/1166205020547592272/Untitled_design1.png?ex=6549a40f&is=65372f0f&hm=5b5c1c29032fe23f7f967d52ae1b23346d919e3ca9aadbfc6e1f49b64a02745d&=&width=492&height=492');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+header h1, nav a {
+    font-family: 'EB Garamond', serif; 
+}
+
